@@ -8,6 +8,8 @@
 |------|
 |![Sangoon_Profile_SRC](https://cdn.discordapp.com/avatars/260303569591205888/83811d211c198632dc279079436fc614.png?size=128)|
 
+Interested this project? [Contribute this project!](https://github.com/cotwo0139/slyrics/pulls)
+
 ## Examples
 ```
 const Lyrics = require('slyrics')
