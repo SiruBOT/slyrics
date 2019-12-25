@@ -17,6 +17,15 @@
   "keywords": [
     "lyrics"
   ],
-  "author": "Sangoon_Is_Noob#1683 (Park Sunwoo)",
-  "license": "MIT"
+  "author": "Sangoon_Is_Noob#1683 <cotwo0139@gmail.com> (https://github.com/cotwo0139)",
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cotwo0139/slyrics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cotwo0139/slyrics/issues"
+  },
+  "homepage": "https://github.com/cotwo0139/slyrics#readme"
 }
