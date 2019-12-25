@@ -1,6 +1,6 @@
 # slyrics - Fetch Lyrics Without Api Key
 
-## This project uses Standard JS Style
+[![NPM Badge](https://nodei.co/npm/slyrics.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/slyrics)
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
 # Contributors:
