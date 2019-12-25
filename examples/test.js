@@ -8,4 +8,4 @@ async function test (provider, title) {
   console.log(result.result)
   console.log(new Date().getTime() - start + 'ms')
 }
-test('melon', 'Takeaway')
+test('musixmatch', 'Takeaway')
