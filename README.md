@@ -10,6 +10,13 @@
 
 Interested this project? [Contribute this project!](https://github.com/cotwo0139/slyrics/pulls)
 
+## Installations
+Using npm:
+```
+npm install slyrics --save
+```
+or [Download](https://github.com/cotwo0139/slyrics) this repository!
+
 ## Examples
 ```
 const Lyrics = require('slyrics')
