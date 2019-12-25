@@ -1,6 +1,6 @@
 {
   "name": "slyrics",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Fetch Lyrics Without Api Key",
   "main": "./lib/index.js",
   "dependencies": {
