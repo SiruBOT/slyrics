@@ -1,0 +1,22 @@
+{
+  "name": "slyrics",
+  "version": "0.1.0",
+  "description": "Fetch Lyrics Without Api Key",
+  "main": "./lib/index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "node-fetch": "^2.6.0"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node ./examples/test.js"
+  },
+  "keywords": [
+    "lyrics"
+  ],
+  "author": "Sangoon_Is_Noob#1683 (Park Sunwoo)",
+  "license": "MIT"
+}
