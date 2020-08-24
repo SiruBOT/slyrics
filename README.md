@@ -4,18 +4,18 @@
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
 # Contributors:
-|[Sangoon_Is_Noob](https://github.com/cotwo0139)|
+|[Sangoon_Is_Noob](https://github.com/sannoob)|
 |------|
 |![Sangoon_Profile_SRC](https://chinobot.ga/author_profile.png)|
 
-Interested this project? [Contribute this project!](https://github.com/cotwo0139/slyrics/pulls)
+Interested this project? [Contribute this project!](https://github.com/sannoob/slyrics/pulls)
 
 ## Installations
 Using npm:
 ```
 npm install slyrics --save
 ```
-or [Download](https://github.com/cotwo0139/slyrics) this repository!
+or [Download](https://github.com/sannoob/slyrics) this repository!
 
 ## Examples
 ```
