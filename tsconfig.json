@@ -1,0 +1,11 @@
+{
+  "include": ["./src/**/*"],
+  "exclude": ["./dist", "./node_modules", "./src/**.spec.ts"],
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "declaration": true,
+    "strict": true,
+    "outDir": "./dist"
+  }
+}
