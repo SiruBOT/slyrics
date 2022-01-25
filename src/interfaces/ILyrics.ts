@@ -1,7 +1,7 @@
-import { Provider } from '../Provider'
-
-export default interface ILyrics {
-  provider: Provider,
-  rawLyrics: string,
-  splitPages(length: number): string[]
+import type { IProvider } from ".";
+export interface ILyrics {
+  provider: IProvider;
+  lyrics: string;
+  albumCover?: string | Buffer;
+  title: string;
 }

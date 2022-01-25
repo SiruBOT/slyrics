@@ -1,5 +1,4 @@
-import ILyrics from './ILyrics'
-import IProvider from './IProvider'
-import ISearchResult from './ISearchResult'
-
-export { ILyrics, IProvider, ISearchResult }
+export { IProvider } from "./IProvider";
+export { ILyrics } from "./ILyrics";
+export { ILyricsSearchResult } from "./ILyricsSearchResult";
+export { ILyricsSearchResultItem } from "./ILyricsSearchResultItem";

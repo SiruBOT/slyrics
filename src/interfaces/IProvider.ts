@@ -1,6 +1,6 @@
-import ISearchResult from './ISearchResult'
+import type { ILyricsSearchResult } from ".";
 
-export default interface IProvider {
-  name: string,
-  search(query: string): ISearchResult[]
+export interface IProvider {
+  name: string;
+  search(query: string): Promise<ILyricsSearchResult>;
 }
