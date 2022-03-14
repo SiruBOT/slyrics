@@ -4,10 +4,15 @@
   "description": "Scrape Lyrics without API Key",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
-    "lint": "eslint --ext .ts ./src",
-    "build": "tsc"
+    "build": "yarn run typescript:eslint && yarn run typescript:clean && yarn run typescript:build",
+    "build:publish": "yarn run build && yarn publish",
+    "typescript:eslint": "eslint --ext .ts ./src",
+    "typescript:build": "tsc",
+    "typescript:clean": "rimraf ./dist/**/*"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sannoob/slyrics.git"
@@ -32,6 +37,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.4.7",
     "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typedoc": "^0.22.13",
     "typescript": "^4.5.4"
   },
   "dependencies": {

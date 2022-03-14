@@ -1,38 +1,38 @@
 # slyrics - Fetch Lyrics Without Api Key
 
-[![NPM Badge](https://nodei.co/npm/slyrics.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/slyrics)
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
-
-# Contributors:
-|[Sangoon_Is_Noob](https://github.com/sannoob)|
-|------|
-|![Sangoon_Profile_SRC](https://chinobot.ga/author_profile.png)|
-
-Interested this project? [Contribute this project!](https://github.com/sannoob/slyrics/pulls)
-
-## Installations
+## Installation
 Using npm:
 ```
 npm install slyrics --save
 ```
-or [Download](https://github.com/sannoob/slyrics) this repository!
+Using yarn:
+```
+yarn add slyrics
+```
 
-## Examples
-```js
-const Lyrics = require('slyrics')
-const lyrics = new Lyrics()
+## Typescript Example
+```ts
+import { ILyricsSearchResult } from "./interfaces";
+import { Lyrics } from "./structures";
+import { MelonProvider } from "./providers/MelonProvider";
 
-async function test (provider, title) {
-    const start = new Date().getTime()
-    const result = await lyrics.get(provider, title)
-    console.log(result)
-    console.log(result.result)
-    console.log(new Date().getTime() - start + 'ms')
+async function example() {
+  const provider = new MelonProvider();
+  const res: ILyricsSearchResult = await provider.search("RE:WIND");
+  if (res.entries.length === 0) {
+    console.log("No result");
+  } else {
+    const lyricsInstance: Lyrics = await res.entries[0].getLyrics();
+    console.log(
+      `${res.entries.length} results found.\nFirst one: ${lyricsInstance.title} - ${lyricsInstance.artist}
+${lyricsInstance.lyrics}`
+    );
+  }
 }
-test('melon', 'Takeaway')
+
+example();
 ```
 
 |Provider|tag|Contributor|
 |------|---|---|
 |Melon|melon|Sangoon_Is_Noob|
-|AtoZLyrics|atoz|Sangoon_Is_Noob|

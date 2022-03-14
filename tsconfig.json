@@ -8,7 +8,7 @@
       "moduleResolution": "node",
       "resolveJsonModule": true,
       "esModuleInterop": true,
-      "outDir": "./build",
+      "outDir": "./dist",
       "declaration": true
   },
   "include": [
@@ -16,7 +16,7 @@
   ],
   "exclude": [
       "node_modules",
-      "./build",
+      "./dist",
       "./src/**.test.ts"
   ],
 }

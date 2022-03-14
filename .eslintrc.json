@@ -6,6 +6,7 @@
   "env": {
     "node": true
   },
+  "ignorePatterns": ["dist/**/*.js", "dist/**/*.d.ts"],
   "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
   "rules": {
     "prettier/prettier": [
