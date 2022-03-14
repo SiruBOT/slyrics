@@ -1,8 +1,8 @@
 {
   "name": "slyrics",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "Scrape Lyrics without API Key",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "yarn run typescript:eslint && yarn run typescript:clean && yarn run typescript:build",
     "build:publish": "yarn run build && yarn publish",
