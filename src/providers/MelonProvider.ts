@@ -1,5 +1,5 @@
 import { JSDOM } from "jsdom";
-import { ILyricsSearchResult } from "../interfaces";
+import { ILyricsSearchResult } from "../interfaces/ILyricsSearchResult";
 import { BaseProvider, Lyrics, LyricsSearchResultItem } from "../structures";
 import { HTTPRequester } from "../structures/HTTPRequester";
 

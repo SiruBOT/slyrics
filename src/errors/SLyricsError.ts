@@ -1,1 +1,1 @@
-export default class SLyricsError extends Error {}
+export class SLyricsError extends Error {}

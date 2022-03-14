@@ -1,4 +1,4 @@
-import type { ILyricsSearchResult } from ".";
+import type { ILyricsSearchResult } from "./ILyricsSearchResult";
 
 export interface IProvider {
   name: string;

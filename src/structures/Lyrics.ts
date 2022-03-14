@@ -1,4 +1,4 @@
-import type { ILyrics } from "../interfaces";
+import type { ILyrics } from "../interfaces/ILyrics";
 import type { BaseProvider } from ".";
 export class Lyrics implements ILyrics {
   public provider: BaseProvider;

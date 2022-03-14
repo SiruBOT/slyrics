@@ -1,5 +1,5 @@
 import { fetch, type Response } from "undici";
-import { SLyricsHTTPRequestError } from "../errors";
+import { SLyricsHTTPRequestError } from "../errors/SLyricsHTTPRequestError";
 export class HTTPRequester {
   static async get(url: string): Promise<Response> {
     const resp: Response = await fetch(url, { method: "GET" });

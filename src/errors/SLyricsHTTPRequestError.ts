@@ -1,7 +1,7 @@
-import SLyricsError from "./SLyricsError";
+import { SLyricsError } from "./SLyricsError";
 import { STATUS_CODES } from "http";
 
-export default class SLyricsHTTPRequestError extends SLyricsError {
+export class SLyricsHTTPRequestError extends SLyricsError {
   public statusCode: number;
   public requestURL: string;
   public method: string;

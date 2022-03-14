@@ -1,5 +1,5 @@
 import type { Lyrics } from ".";
-import type { ILyricsSearchResultItem } from "../interfaces";
+import type { ILyricsSearchResultItem } from "../interfaces/ILyricsSearchResultItem";
 
 export class LyricsSearchResultItem implements ILyricsSearchResultItem {
   public title: string;

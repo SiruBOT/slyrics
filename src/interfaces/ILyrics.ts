@@ -1,4 +1,4 @@
-import type { IProvider } from ".";
+import type { IProvider } from "./IProvider";
 export interface ILyrics {
   provider: IProvider;
   lyrics: string;
