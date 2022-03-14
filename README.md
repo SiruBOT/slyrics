@@ -10,6 +10,9 @@ Using yarn:
 yarn add slyrics
 ```
 
+## Documentation
+[Typedoc](https://sirubot.github.io/slyrics/)
+
 ## Typescript Example
 ```ts
 import { ILyricsSearchResult } from "./interfaces";
