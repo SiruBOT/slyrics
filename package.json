@@ -1,31 +1,48 @@
 {
   "name": "slyrics",
-  "version": "0.1.40",
-  "description": "Fetch Lyrics Without Api Key",
-  "main": "./lib/index.js",
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "node-fetch": "^2.6.0"
-  },
-  "directories": {
-    "example": "examples",
-    "lib": "lib"
-  },
+  "version": "1.0.0-alpha.1",
+  "description": "Scrape Lyrics without API Key",
+  "main": "index.js",
   "scripts": {
-    "test": "node ./examples/test.js"
+    "build": "yarn run typescript:eslint && yarn run typescript:clean && yarn run typescript:build",
+    "build:publish": "yarn run build && yarn publish",
+    "typescript:eslint": "eslint --ext .ts ./src",
+    "typescript:build": "tsc",
+    "typescript:clean": "rimraf ./dist/**/*"
   },
-  "keywords": [
-    "lyrics"
+  "files": [
+    "dist"
   ],
-  "author": "Sangoon_Is_Noob#1683 <cotwo0139@gmail.com> (https://github.com/cotwo0139)",
-  "license": "MIT",
-  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cotwo0139/slyrics.git"
+    "url": "git+https://github.com/sannoob/slyrics.git"
   },
+  "keywords": [
+    "Lyrics",
+    "Scrape",
+    "Crawl"
+  ],
+  "author": "Sannoob#3144",
+  "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/cotwo0139/slyrics/issues"
+    "url": "https://github.com/sannoob/slyrics/issues"
   },
-  "homepage": "https://github.com/cotwo0139/slyrics#readme"
+  "homepage": "https://github.com/sannoob/slyrics#readme",
+  "devDependencies": {
+    "@types/jsdom": "^16.2.14",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typedoc": "^0.22.13",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "jsdom": "^19.0.0",
+    "undici": "^4.12.2"
+  }
 }

@@ -34,8 +34,14 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
+# Visual studio code workspace file
+*.code-workspace
+
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
+
+# Typescript dist
+dist/
 
 # Dependency directories
 node_modules/
