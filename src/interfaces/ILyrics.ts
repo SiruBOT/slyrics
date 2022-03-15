@@ -1,7 +1,7 @@
 import type { IProvider } from "./IProvider";
 export interface ILyrics {
   provider: IProvider;
-  lyrics: string;
+  lyrics: string | null;
   albumCover?: string | Buffer;
   title: string;
 }

@@ -98,7 +98,7 @@ export class MelonProvider extends BaseProvider {
         this,
         title,
         artist,
-        lyrics ? lyrics : "",
+        lyrics ? lyrics : null,
         albumCover ? albumCover : ""
       );
     };

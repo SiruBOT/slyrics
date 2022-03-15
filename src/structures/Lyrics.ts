@@ -2,7 +2,7 @@ import type { ILyrics } from "../interfaces/ILyrics";
 import type { BaseProvider } from ".";
 export class Lyrics implements ILyrics {
   public provider: BaseProvider;
-  public lyrics: string;
+  public lyrics: string | null;
   public title: string;
   public artist: string;
   public albumCover?: string | Buffer;
@@ -10,7 +10,7 @@ export class Lyrics implements ILyrics {
     provider: BaseProvider,
     title: string,
     artist: string,
-    lyrics: string,
+    lyrics: string | null,
     albumCover?: string | Buffer
   ) {
     this.provider = provider;
