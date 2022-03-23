@@ -99,6 +99,7 @@ export class MelonProvider extends BaseProvider {
         title,
         artist,
         lyrics ? lyrics : null,
+        songInfoURL,
         albumCover ? albumCover : ""
       );
     };
