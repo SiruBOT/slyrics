@@ -1,7 +1,7 @@
 import { SLyricsNotImplementedError } from "../errors/SLyricsNotImplementedError";
 import { IProvider } from "../interfaces/IProvider";
 import { ILyricsSearchResult } from "../interfaces/ILyricsSearchResult";
-import { NotImplCodes } from "../Constances";
+import { NotImplCodes } from "../Constants";
 export abstract class BaseProvider implements IProvider {
   public name: string;
   constructor(name: string) {

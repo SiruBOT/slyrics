@@ -1,6 +1,6 @@
 {
   "name": "slyrics",
-  "version": "1.0.2",
+  "version": "1.0.21",
   "description": "Scrape Lyrics without API Key",
   "main": "dist/index.js",
   "scripts": {

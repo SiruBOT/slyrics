@@ -1,19 +1,23 @@
-# slyrics - Fetch Lyrics Without Api Key
+<h1 align="center">🗒️  slyrics - Fetch Lyrics Without Api Key</h1>
 
-## Installation
-Using npm:
-```
+<p align="center">
+  <a href="https://www.npmjs.com/package/slyrics">
+    <img alt="slyrics version" src="https://badge.fury.io/js/slyrics.svg"></img>
+  </a>
+<p>
+
+
+## 📥  Installation
+``
 npm install slyrics --save
-```
-Using yarn:
-```
-yarn add slyrics
-```
+``   
+or   
+``yarn add slyrics``
 
-## Documentation
-[Typedoc](https://sirubot.github.io/slyrics/)
+## [Documentation](https://slyrics.cocochino.cafe)
+[![pages-build-deployment](https://github.com/SiruBOT/slyrics/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SiruBOT/slyrics/actions/workflows/pages/pages-build-deployment)
 
-## Typescript Example
+## Example Code
 ```ts
 import { ILyricsSearchResult } from "./interfaces";
 import { Lyrics } from "./structures";
@@ -24,13 +28,12 @@ async function example() {
   const res: ILyricsSearchResult = await provider.search("RE:WIND");
   if (res.entries.length === 0) {
     console.log("No result");
-  } else {
-    const lyricsInstance: Lyrics = await res.entries[0].getLyrics();
-    console.log(
-      `${res.entries.length} results found.\nFirst one: ${lyricsInstance.title} - ${lyricsInstance.artist}
-${lyricsInstance.lyrics}`
-    );
+    return;
   }
+  const lyricsInstance: Lyrics = await res.entries[0].getLyrics();
+  console.log(res.entires.length + " results");
+  console.log("First entry: " + lyricsInstance.title + " - " + lyricsInstance.artist);
+  console.log(lyricsInstance.lyrics);
 }
 
 example();
@@ -38,4 +41,4 @@ example();
 
 |Provider|tag|Contributor|
 |------|---|---|
-|Melon|melon|Sangoon_Is_Noob|
+|Melon|melon|[Sannoob3144](https://github.com/sannoob3144)|
