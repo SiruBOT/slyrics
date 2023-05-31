@@ -1,6 +1,6 @@
 {
   "name": "slyrics",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "Scrape Lyrics without API Key",
   "main": "dist/index.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "Crawl"
   ],
   "author": "Sannoob#3144",
-  "license": "AGPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sannoob/slyrics/issues"
   },
